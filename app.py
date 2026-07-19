@@ -110,11 +110,7 @@ if st.button("Predict Salary"):
 
     # Encode categorical columns
      
-    education_encoded = encoders["Education"].transform([education])[0]
-    department_encoded = encoders["Department"].transform([department])[0]
-    job_level_encoded = encoders["Job_Level"].transform([job_level])[0]
-    remote_encoded = encoders["Remote_Work"].transform([remote])[0]
-    city_encoded = encoders["City"].transform([city])[0]
+ 
 
     # Create DataFrame (same order as training)
     input_data = pd.DataFrame({
