@@ -109,7 +109,7 @@ skill = st.slider(
 if st.button("Predict Salary"):
 
     # Encode categorical columns
-    gender_encoded = encoders["Gender"].transform([gender])[0]
+     
     education_encoded = encoders["Education"].transform([education])[0]
     department_encoded = encoders["Department"].transform([department])[0]
     job_level_encoded = encoders["Job_Level"].transform([job_level])[0]
