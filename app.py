@@ -105,7 +105,45 @@ skill = st.slider(
 # -------------------------------
 # Prediction
 # -------------------------------
+# Manual Encoding
 
+gender_encoded = 1 if gender == "Male" else 0
+
+education_map = {
+    "Diploma": 0,
+    "Master": 1,
+    "Bachelor": 2,
+    "PhD": 3
+}
+education_encoded = education_map[education]
+
+department_map = {
+    "Sales": 0,
+    "Operations": 1,
+    "IT": 2,
+    "HR": 3,
+    "Marketing": 4
+}
+department_encoded = department_map[department]
+
+job_level_map = {
+    "Junior": 0,
+    "Lead": 1,
+    "Senior": 2,
+    "Manager": 3,
+    "Mid": 4
+}
+job_level_encoded = job_level_map[job_level]
+
+remote_encoded = 1 if remote == "Yes" else 0
+
+city_map = {
+    "Chennai": 0,
+    "Delhi": 1,
+    "Hyderabad": 2,
+    "Mumbai": 3
+}
+city_encoded = city_map[city]
 if st.button("Predict Salary"):
 
     # Encode categorical columns
