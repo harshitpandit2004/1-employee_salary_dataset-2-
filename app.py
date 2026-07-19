@@ -7,7 +7,7 @@ import joblib
 # -------------------------------
 model = joblib.load("salary_model.pkl")
 scaler = joblib.load("scaler.pkl")
-encoders = joblib.load("encoders.pkl")
+ 
 
 # -------------------------------
 # App Title
